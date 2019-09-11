@@ -1,5 +1,6 @@
 import React from "react";
 import pokemons from "./Pokemons";
+import Pokemon from "./components/Pokemon";
 
 class App extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends React.Component {
           <h1 className="App-title">Mi Lista de Pokemon</h1>
         </header>
         <main className="App-main"></main>
+        <Pokemon data={pokemons} />
       </div>
     );
   }
