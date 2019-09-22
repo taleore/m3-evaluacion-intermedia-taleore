@@ -1,12 +1,12 @@
 import React from "react";
 import pokemons from "./Pokemons";
-import Pokemon from "./components/Pokemon";
+import Pokelist from "./components/Pokelist";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: pokemons
+      pokemons: pokemons
     };
     console.log(pokemons);
   }
@@ -16,8 +16,9 @@ class App extends React.Component {
         <header className="App-header">
           <h1 className="App-title">Mi Lista de Pokemon</h1>
         </header>
-        <main className="App-main"></main>
-        <Pokemon data={pokemons} />
+        <main className="App-main">
+          <Pokelist data={pokemons} />
+        </main>
       </div>
     );
   }
